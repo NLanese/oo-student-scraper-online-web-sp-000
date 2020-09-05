@@ -7,6 +7,9 @@ class Student
   @@all = []
 
   def initialize(student_hash)
+    student_hash.each do | key , value |
+      self.send(("#{key}="), value)
+    end
     # student_hash.each do | key, value |
     #   if (key == :name)
     #     @name = value
@@ -27,8 +30,8 @@ class Student
     #   elsif (key == :profile_url)
     #     @profile_quote = value
     #   end
-      binding.pry
-    end
+    #  binding.pry
+    #end
     @@all << self
   end
 
