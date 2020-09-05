@@ -7,7 +7,6 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    #binding.pry
     student_hash.each do | key, value |
       if (key == :name)
         @name = value
