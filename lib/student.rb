@@ -7,26 +7,26 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    student_hash.each do | key, value |
-      if (key == :name)
-        @name = value
-      elsif (key == :location)
-        @location = value
-      elsif (key == :twitter)
-        @twitter = value
-      elsif (key == :linkedin)
-        @linkedin = value
-      elsif (key == :github)
-        @github = value
-      elsif (key == :blog)
-        @blog = value
-      elsif (key == :profile_quote)
-        @profile_quote = value
-      elsif (key == :bio)
-        @bio = bio
-      elsif (key == :profile_url)
-        @profile_quote = value
-      end
+    # student_hash.each do | key, value |
+    #   if (key == :name)
+    #     @name = value
+    #   elsif (key == :location)
+    #     @location = value
+    #   elsif (key == :twitter)
+    #     @twitter = value
+    #   elsif (key == :linkedin)
+    #     @linkedin = value
+    #   elsif (key == :github)
+    #     @github = value
+    #   elsif (key == :blog)
+    #     @blog = value
+    #   elsif (key == :profile_quote)
+    #     @profile_quote = value
+    #   elsif (key == :bio)
+    #     @bio = bio
+    #   elsif (key == :profile_url)
+    #     @profile_quote = value
+    #   end
       binding.pry
     end
     @@all << self
