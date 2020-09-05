@@ -28,7 +28,7 @@ class Student
       elsif (key = :profile_url)
         @profile_quote = value
       end
-      #binding.pry
+      binding.pry
     end
     @@all << self
   end
