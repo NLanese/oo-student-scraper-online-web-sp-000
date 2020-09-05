@@ -36,6 +36,10 @@ class Student
   end
 
   def self.create_from_collection(students_array)
+    students_array.each do | selectedHash |
+      newStudent = Student.new(:name => selectedHash.name, :location => selectedHash.location)
+      @@all << newStudent
+    end
 
   end
 
